@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    /*border: 12px solid cornflowerblue;*/
+}
+
+section{
+    /*border: 2px solid lightcoral;*/
+    margin: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    /*-ms-flex-align: center;*/
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: wheat;
+
+}
+nav >  a {
+    padding: 12px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.div-main{
+    /*border: 2px solid green;*/
+    margin: 12px;
+    display: flex;
+    width: 90%;
+    flex-flow: column wrap;
+}
+
+.t-div{
+    display: flex;
+    flex-direction: row;
+    /*border: 2px solid grey;*/
+}
+
+
+.div-child{
+    border: 2px solid black;
+    margin: 5px;
+    width: 33%;
+    padding: 2px;
+    text-align: justify;
+}
+
+ /* .div-child p{*/
+ /*    margin: 0;*/
+ /*    padding: 0;*/
+ /*}*/
+
+aside{
+    /*border: 2px solid deepskyblue;*/
+    display: flex;
+    width: 10%;
+    flex-wrap: wrap;
+    /*margin: 12px;*/
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .div-child{
+        width: 90%;
+    }
+    .t-div{
+        flex-direction: row;
+    }
+    /*.m-child{*/
+    /*    width: 90%;*/
+    /*    flex-direction: row;*/
+    /*}*/
+    img{
+        width: 102px;
+    }
+    aside{
+        flex-direction: column;width: 10%;
+    }
+}
+
+/*@media  screen and (min-width: 1200px) {*/
+/*    */
+/*}*/
