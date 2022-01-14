@@ -3,32 +3,39 @@
 }
 
 body{
-    border: 12px solid cornflowerblue;
+    /*border: 6px solid cornflowerblue;*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-section{
-    /*border: 2px solid lightcoral;*/
-    margin: 12px;
-    padding: 12px;
-    display: flex;
-    flex-direction: row;
-    /*-ms-flex-align: center;*/
-}
 nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     background-color: wheat;
-
+    margin: 12px;
 }
 nav >  a {
     padding: 12px;
     text-decoration: none;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+section{
+    /*border: 2px solid lightcoral;*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .div-main{
-    /*border: 2px solid green;*/
+    /*border: 2px solid mediumorchid;*/
     margin: 12px;
     display: flex;
     width: 90%;
@@ -38,16 +45,38 @@ nav >  a {
 .t-div{
     display: flex;
     flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    width: 100%;
+    margin-bottom: 6px;
     /*border: 2px solid grey;*/
 }
 
 
 .div-child{
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     margin: 5px;
-    width: 33%;
-    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 32%;
+    /*height: 90%;*/
+    padding: 12px;
+    background-color: aquamarine;
+}
+
+.div-child > p{
     text-align: justify;
+}
+
+.div-child > span{
+    text-align: left;
+}
+
+img {
+    width: 100px;
+    height:220px;
 }
 
  /* .div-child p{*/
@@ -56,17 +85,27 @@ nav >  a {
  /*}*/
 
 aside{
-    border: 2px solid deepskyblue;
-    display: flex;
-    width: 10%;
-    flex-wrap: wrap;
-    /*margin: 12px;*/
+    /*border: 2px solid green;*/
+    width: 12%;
+    height: 35%;
     padding: 8px;
+    margin-right: 2px;
+    margin-top: 13px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-device-width : 580px) {
+aside > div{
+    border: 2px solid grey;
+    text-align: justify;
+    margin-bottom: 6px;
+    padding: 2px;
+}
+
+@media screen and (max-device-width : 480px) {
     body{
-        background-color: wheat;
+        /*background-color: wheat;*/
         margin: 0;
         padding: 0;
         width: 100%;
@@ -105,11 +144,12 @@ aside{
     .t-div{
         /*padding: 12px;*/
         flex-direction: column;
+        font-size: 42px;
     }
 
     .div-child > p {
         text-align: justify;
-        font-size: 14px;
+        /*font-size: 43px;*/
     }
     /*.m-child{*/
     /*    width: 90%;*/
@@ -118,12 +158,13 @@ aside{
     img{
         width: 200px;
         height: 280px;
-        border: 2px solid black;
+        /*border: 2px solid black;*/
     }
     aside{
-        border: 2px solid green;
+        /*border: 2px solid green;*/
         display: flex;
         width: 100%;
+        font-size: 40px;
         flex-wrap: nowrap;
         /*margin: 12px;*/
         padding: 8px;
@@ -132,7 +173,7 @@ aside{
 
 @media screen and (max-device-width : 380px) {
     body{
-        background-color: aquamarine;
+        /*background-color: darksalmon;*/
         margin: 0;
         padding: 0;
     }
@@ -171,11 +212,13 @@ aside{
     .t-div{
         /*padding: 12px;*/
         flex-direction: column;
+        font-size: 48px;
+        /*border: 2px solid red;*/
     }
 
     .div-child > p {
         text-align: justify;
-        font-size: 20px;
+        font-size: 45px;
     }
     /*.m-child{*/
     /*    width: 90%;*/
@@ -193,6 +236,7 @@ aside{
         flex-wrap: nowrap;
         /*margin: 12px;*/
         padding: 8px;
+        font-size: 45px;
     }
 }
 
